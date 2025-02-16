@@ -9,11 +9,16 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
 						"name": "_id",
 						"type": "uint256"
 					}
 				],
-				"name": "sayHello",
+				"name": "callSayHelloFactory",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -28,55 +33,49 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "news",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
 						"name": "_id",
 						"type": "uint256"
 					}
 				],
-				"name": "sayHelloMapping",
+				"name": "callSetHelloWorldFromFactory",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "createHelloWorld",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "getHelloWorldByIndex",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "contract HelloWorld",
 						"name": "",
-						"type": "string"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "news",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_id",
-						"type": "uint256"
-					}
-				],
-				"name": "setHelloWorld",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "news",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_id",
-						"type": "uint256"
-					}
-				],
-				"name": "setHelloWorldMapping",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -93,7 +92,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"dataStruct.sol": "HelloWorld"
+			"HelloWorldFactory.sol": "HelloWorldFactory"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -107,6 +106,14 @@
 		"remappings": []
 	},
 	"sources": {
+		"HelloWorldFactory.sol": {
+			"keccak256": "0xd60f44cd99a73a5b16e0fb11aaaaafe8a0c829829aeb0ee706311b0bebc61aa9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fdb43131403193cc80092bab2d2f217a0300d4332727d5cc6781f1b0bf0899f9",
+				"dweb:/ipfs/QmZnMWFyTEgfGqY7asfjUT77qiZE13iyFaE3zBarB93eGa"
+			]
+		},
 		"dataStruct.sol": {
 			"keccak256": "0x2ee96e1341015aafefec23e7ff47f1b19cbaf760111571cfe845052f94bd725e",
 			"license": "MIT",

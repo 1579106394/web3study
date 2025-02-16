@@ -93,7 +93,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"dataStruct.sol": "HelloWorld"
+			"dataStruct.sol": "HelloFunction"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -108,11 +108,11 @@
 	},
 	"sources": {
 		"dataStruct.sol": {
-			"keccak256": "0x2ee96e1341015aafefec23e7ff47f1b19cbaf760111571cfe845052f94bd725e",
+			"keccak256": "0x7c0bd21c9a6fca3e374561af786697652271d8ab3bb8cabff623958ee27fc979",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ea431021584eb060c8113b9624f0f9ecec54565375cae5ab7a563270c0401ecf",
-				"dweb:/ipfs/QmWKG1aBv1QYWi87LMdXdDQQc2mbgTBy4qVbp87334fd5R"
+				"bzz-raw://f8f4e699c71057d66c5e0ecdfe0c6ce56409915e738af00c3b4fe440cf2b0a7a",
+				"dweb:/ipfs/QmcouYzwoR9o7jEU92FpHe9Zzum49WT2mRE3mXrgVKHVQK"
 			]
 		}
 	},
